@@ -3,13 +3,13 @@ const Category = require('../models/Category');
 
 exports.getAllCategories = async (req, res, next) => {
     try {
-        const { parent } = req.query;
+        const { id } = req.query;
         let query = {};
 
-        if (parent) {
-            query.parent = parent;
+        if (id) {
+            query._id = id;
         } else {
-            query.parent = null;
+            query.id = null;
         }
 
         const categories = await Category.find(query).populate('parent');
