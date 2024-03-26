@@ -26,7 +26,7 @@ Set up environment variables:
 
 Create a .env file in the root directory.
 Add the following environment variables:
-PORT: Port number for the server (e.g., 3000).
+PORT: Port number for the server (e.g., 8000).
 MONGODB_URI: MongoDB connection URI.
 
 Start the server: npm start
@@ -46,7 +46,7 @@ URL: /api/v1/categories
 
 ### Get Single Categories
 
-URL: /api/v1/categories?_id=(mongo id)
+URL: /api/v1/categories?id=(mongo id)
 
 - Method: GET
 
