@@ -44,6 +44,16 @@ URL: /api/v1/categories
 - Query Parameters: None
 - Response: JSON array of category objects.
 
+### Get Single Categories
+
+URL: /api/v1/categories?_id=(mongo id)
+
+- Method: GET
+
+- Description: Retrieve single categories.
+- Query Parameters: None
+- Response: JSON array of category objects.
+
 ### Get Child Categories
 
 URL: /api/v1/categories/:parentId/children
